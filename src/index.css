@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --graphic-text-cyan: hsl(167, 40%, 24%);
+    --photo-txt-blue: hsl(198, 62%, 26%);
+    --footer-cyan: hsl(168, 34%, 41%);
+
+    --VD-blue: hsl(212, 27%, 19%);
+    --VD-grayish-blue: hsl(213, 9%, 39%);
+    --D-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+  }
+
+  .introsection {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center @apply p-4;
+  }
+
+  h1 {
+    font-family: "Fraunces", sans-serif;
+  }
+
+  /* .section-3 .details {
+    background-image: url(./images/);
+  } */
+
+  .footer {
+    background-color: hsla(168, 90%, 44%, 0.685);
+  }
+
+  @media screen and (max-width: 926px) {
+    .introsection {
+      background-image: url(./images/mobile/image-header.jpg);
+    }
+  }
+}

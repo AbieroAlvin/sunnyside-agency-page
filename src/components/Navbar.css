@@ -1,0 +1,45 @@
+.navbar {
+  @apply w-full h-[100px] flex justify-between items-center p-4 bg-transparent mx-auto;
+}
+
+.logo {
+  @apply md:text-4xl text-3xl text-[var(--White)] w-[80px] font-bold;
+}
+
+.nav-menu {
+  @apply flex;
+}
+
+.nav-item {
+  @apply p-4 text-[var(--White)] cursor-pointer hover:scale-110;
+}
+
+.nav-item:nth-last-child(1) {
+  @apply text-black bg-white hover:bg-black/5  hover:text-white px-8 rounded-full;
+}
+
+.hamburger {
+  @apply hidden cursor-pointer;
+}
+
+@media screen and (max-width: 940px) {
+  .nav-menu {
+    @apply fixed right-[-100%] top-[100px] flex-col justify-center bg-[var(--White)] w-[340px] h-[400px] text-center duration-300 px-14 z-10;
+  }
+
+  .nav-menu.active {
+    @apply right-8;
+  }
+
+  .nav-item {
+    @apply m-2 text-2xl justify-center text-[var(--VD-grayish-blue)];
+  }
+
+  .nav-item:nth-last-child(1) {
+    @apply text-black bg-[var(--Yellow)] hover:bg-black/5 hover:text-[var(--Yellow)] px-4 rounded-full;
+  }
+
+  .hamburger {
+    @apply flex;
+  }
+}
