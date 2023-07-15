@@ -16,6 +16,7 @@ const Navbar = () => {
         <li className="nav-item">Projects</li>
         <li className="nav-item">Contact</li>
       </ul>
+
       <div className="hamburger " onClick={handleClick}>
         {click ? (
           <FaTimes size={30} className="text-[var(--White)]" />

@@ -11,11 +11,11 @@
 }
 
 .nav-item {
-  @apply p-4 text-[var(--White)] cursor-pointer hover:scale-110;
+  @apply p-4 text-[var(--White)] cursor-pointer hover:scale-110 font-Fraunces text-[16px];
 }
 
 .nav-item:nth-last-child(1) {
-  @apply text-black bg-white hover:bg-black/5  hover:text-white px-8 rounded-full;
+  @apply text-black bg-white hover:bg-blue-200/60  hover:text-white px-8 rounded-full uppercase font-Fraunces font-bold;
 }
 
 .hamburger {
