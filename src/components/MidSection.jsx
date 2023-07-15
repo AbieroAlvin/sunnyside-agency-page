@@ -4,12 +4,12 @@ import cup from "../images/mobile/image-stand-out.jpg";
 const MidSection = () => {
   return (
     <div>
-      <div className="section-1 text-center md:text-left mb-8 md:grid md:grid-cols-2 md:mb-0 md:items-center">
-        <div className="img ">
-          <img src={egg} alt="/" />
+      <div className="section-1 text-center md:text-left mb-8 md:grid md:grid-cols-2 md:mb-0 md:justify-center md:items-center">
+        <div className="img md:row-start-1 md:col-start-2 ">
+          <img src={egg} alt="/" className="" />
         </div>
         <div>
-          <div className="details px-8 py-10  flex flex-col gap-4 md:px-12">
+          <div className="details px-8 py-10 flex flex-col gap-4 md:row-start-1 md:col-start-1 md:px-12">
             <h1 className="text-4xl font-Fraunces text-[var(--VD-blue)]">
               Transform your brand
             </h1>
@@ -29,7 +29,7 @@ const MidSection = () => {
           <img src={cup} alt="/" />
         </div>
         <div>
-          <div className="details px-8 py-10 md:px-12 flex flex-col gap-4">
+          <div className="details px-8 py-10 flex flex-col gap-4">
             <h1 className="text-4xl font-Fraunces text-[var(--VD-blue)]">
               Stand out to the right audience
             </h1>
@@ -48,7 +48,7 @@ const MidSection = () => {
 
       <div className="md:grid md:grid-cols-2 md:grid-rows-1">
         <div className="section-3 text-center ">
-          <div className="details bg-[url('./images/mobile/image-graphic-design.jpg')] bg-cover px-8 bg-no-repeat bg-center flex flex-col gap-4 pt-[22.65rem] pb-8">
+          <div className="details bg-[url('./images/mobile/image-graphic-design.jpg')] bg-cover px-8 bg-no-repeat bg-center flex flex-col gap-4 h-full pt-[22.65rem] pb-8">
             <h1 className="text-4xl font-Fraunces text-[var(--graphic-text-cyan)]">
               Graphic Design
             </h1>
@@ -60,7 +60,7 @@ const MidSection = () => {
           </div>
         </div>
         <div className="section-4 text-center">
-          <div className="details bg-[url('./images/mobile/image-photography.jpg')] bg-cover px-8 bg-no-repeat bg-center flex flex-col gap-4 pt-[24rem] pb-10">
+          <div className="details bg-[url('./images/mobile/image-photography.jpg')] bg-cover px-8 bg-no-repeat bg-center flex flex-col gap-4 h-full pt-[22.65rem] pb-10">
             <h1 className="text-4xl font-Fraunces text-[var(--photo-txt-blue)]">
               Photography
             </h1>
